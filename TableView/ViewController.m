@@ -153,7 +153,7 @@
 //
 //    }];
     UITableViewRowAction *layTopRowAction2 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"驳回" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        
+        //正常情况下在这里直接进行数据请求就可以了
         [self.dataArray removeObjectAtIndex:indexPath.row];
         // Delete the row from the data source.
         [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
